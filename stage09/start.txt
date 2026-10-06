@@ -1,0 +1,2 @@
+cd D:\student_project\stage09\src
+python -m student_app.main
