@@ -22,6 +22,7 @@ def display_student(student):
     print(f"Semester: {student.semester}")
     print(f"Marks: {student.marks}")
     print(f"Grade: {grade}")
+    print(f"Status: {student.get_status()}")
     logger.info("Student information displayed.")
 def display_report(student):
     report = generate_student_report(student)

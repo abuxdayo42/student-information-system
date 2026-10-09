@@ -11,5 +11,6 @@ def generate_student_report(student):
         f"Semester: {student.semester}",
         f"Marks: {student.marks}",
         f"Grade: {grade}",
+	f"Status: {student.get_status()}",
     ]
     return "\n".join(report)

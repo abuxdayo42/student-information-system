@@ -43,3 +43,13 @@ def test_update_semester():
     student.update_semester(7)
 
     assert student.semester == 7
+
+
+def test_student_status_pass():
+    student = Student("101", "Ali", "BSCS", 4, 75)
+    assert student.get_status() == "Pass"
+
+
+def test_student_status_fail():
+    student = Student("102", "Ahmed", "BSCS", 4, 40)
+    assert student.get_status() == "Fail"
